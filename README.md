@@ -1,14 +1,13 @@
 <h1>UpdateFileWithPython</h1>
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+Access to restricted content is updated with an allow list of IP addresses. The "allow_list.txt" file describes these IP addresses. A separate remove list identifies IP addresses that should no longer have access to this data. I created an algorithm to assist in updating the "allow_list.txt" file and remove these IP addresses that should no longer have access.
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>Python</b> 
 
 <h2>Environments Used </h2>
 
@@ -17,7 +16,7 @@ Project consists of a simple PowerShell script that walks the user through "zero
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
+First, I opened the "allow_list.txt" file. I assigned the file name as a string to the import_file variable: <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />

@@ -17,7 +17,7 @@ Access to restricted content is updated with an allow list of IP addresses. The 
 
 <p align="center">
 First, I opened the "allow_list.txt" file. I assigned the file name as a string to the import_file variable: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Assign%20import%20image.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>

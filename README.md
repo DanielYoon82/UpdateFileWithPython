@@ -17,15 +17,15 @@ Access to restricted content is updated with an allow list of IP addresses. The 
 
 <p align="center">
 First, I opened the "allow_list.txt" file. I assigned the file name as a string to the import_file variable: <br/>
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Assign%20import%20image.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Assign%20import%20image.jpg" height="45%" width="45%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Second, I used a with statement to open the file. In my algorithm, the with statement is used with the .open() function to read its content. The purpose of opening the file is to give me  access to the IP addresses stored in the allow list file. The with keyword will assist by managing the data by closing the file after exiting the with statement. In the code with open(import_file, "r") as file:  <br/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Buildwith.jpg" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+In order to read the file contents, I used the .read() method to convert it into the string. When using an .open() function it includes the argument "r" for “read,” which then calls the .read() function in the body of the with statement. The .read() method converts the file into a string. I applied the .read() method to the file variable identified in the with statement. Then, I applied the string output of this method to the variable ip_addresses. This code allows me to access the "allow_list.txt" file into a string format which enables me to later use the string to organize and extract data from the Python program: <br/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Untitled%20document_page-0001%20(1).jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Confirm your selection:  <br/>

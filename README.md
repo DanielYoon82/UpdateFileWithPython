@@ -35,12 +35,14 @@ To remove individual IP addresses from the allow list, It needs to be in the lis
 <img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Untitled%20document%20(1)_page-0001%20(1).jpg" height="55%" width="55%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ITERATE THROUGH THE REMOVE LIST <br />
+A vital part of my algorithm is to iterate through the IP addresses that are elements in the remove_list. To do this, I created a for loop. The purpose of the for loop in this algorithm is to apply specific code statements to all elements in a sequence. The for keyword starts the loop. It is followed by the loop variable element and the keyword in. The keyword in initiates the iteration through the sequence ip_addresses and assigns each value to the loop variable element:  <br/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Untitled.jpg" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+REMOVE IP ADDRESSES THAT ARE ON THE REMOVE LIST <br />
+This algorithm requires removing any IP address from the allow list, ip_addresses, that is also contained in remove_list. First, within my for loop, I created a conditional that evaluated whether or not the loop variable element was found in the ip_addresses list. I did this because applying .remove() to elements that were not found in ip_addresses would result in an error. I applied .remove() to ip_addresses. I passed in the loop variable element as the argument so that each IP address that was in the remove_list would be removed from ip_addresses:  <br/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Untitled1.jpg" height="63%" width="63%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Observe the wiped disk:  <br/>

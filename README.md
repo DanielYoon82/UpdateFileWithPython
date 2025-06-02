@@ -43,7 +43,7 @@ To remove individual IP addresses from the allow list, It needs to be in the lis
 ITERATE THROUGH THE REMOVE LIST <br />
 A vital part of my algorithm is to iterate through the IP addresses that are elements in the remove_list. To do this, I created a for loop. The purpose of the for loop in this algorithm is to apply specific code statements to all elements in a sequence. The for keyword starts the loop. It is followed by the loop variable element and the keyword in. The keyword in initiates the iteration through the sequence ip_addresses and assigns each value to the loop variable element:  <br/>
 <br />
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Untitled.jpg" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Untitled.jpg" height="38%" width="38%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 REMOVE IP ADDRESSES THAT ARE ON THE REMOVE LIST <br />
@@ -51,7 +51,7 @@ This algorithm requires removing any IP address from the allow list, ip_addresse
 <br />
 I applied .remove() to ip_addresses. I passed in the loop variable element as the argument so that each IP address that was in the remove_list would be removed from ip_addresses:  <br/>
 <br />
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Untitled1.jpg" height="63%" width="63%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/Untitled1.jpg" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 UPDATE THE FILE WITH THE REVISED LIST OF IP ADDRESSES <br/>
@@ -67,7 +67,7 @@ For this, I used a second argument of "w" with the open() function in my with st
 <br />
 In this scenario I wanted to write the updated allow list as a string to the file "allow_list.txt". The restricted content will no longer be accessible to any IP addresses that were removed from the allow list. To rewrite the file, I appended the .write() function to the file object file that I identified in the with statement. I passed in the ip_addresses variable as the argument to specify that the contents of the file specified in the with statement should be replaced with the data in this variable. <br />
 <br />
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/write.1.jpg" height="55%" width="55%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/write.1.jpg" height="52%" width="52%" alt="Disk Sanitization Steps"/>
 </p>
 
 <!--

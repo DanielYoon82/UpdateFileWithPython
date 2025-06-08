@@ -67,15 +67,4 @@ For this, I used a second argument of "w" with the open() function in my with st
 <br />
 In this scenario I wanted to write the updated allow list as a string to the file "allow_list.txt". The restricted content will no longer be accessible to any IP addresses that were removed from the allow list. To rewrite the file, I appended the .write() function to the file object file that I identified in the with statement. I passed in the ip_addresses variable as the argument to specify that the contents of the file specified in the with statement should be replaced with the data in this variable. <br />
 <br />
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/write.1.jpg" height="52%" width="52%" alt="Disk Sanitization Steps"/>
-</p>
-
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/write.1.jpg" height="52%" width="52%" alt="Disk Sanitization Steps"/> <br />

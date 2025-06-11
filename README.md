@@ -25,7 +25,7 @@ Access to restricted content is updated with an allow list of IP addresses. The 
 Second, I used a with statement to open the file. In my algorithm, the with statement is used with the .open() function to read its content. The purpose of opening the file is to give me  access to the IP addresses stored in the allow list file. The with keyword will assist by managing the data by closing the file after exiting the with statement. In the code with open(import_file, "r") as file: <br />
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/Buildwith.jpg" height="55%" width="55%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/Buildwith.jpg" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
@@ -35,7 +35,7 @@ In order to read the file contents, I used the .read() method to convert it into
  This code allows me to access the "allow_list.txt" file into a string format which enables me to later use the string to organize and extract data from the Python program: <br />
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHFileContents.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHFileContents.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
@@ -43,7 +43,7 @@ In order to read the file contents, I used the .read() method to convert it into
 To remove individual IP addresses from the allow list, It needs to be in the list format. I used the .split() method to convert the ip_addresses string into a list. The .split() function is called by appending it to a string variable. It does this by converting the data of a string to a list. The purpose of splitting ip_addresses into a list is to make it easier to remove IP addresses from the allow list. In this algorithm, the .split() function retrieves the data stored in the variable ip_addresses and it converts this string into a list of IP addresses. To store this list, I reassigned it back to the variable ip_addresses:  <br/>
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHConvertString.jpg" height="55%" width="55%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHConvertString.jpg" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
@@ -51,7 +51,7 @@ To remove individual IP addresses from the allow list, It needs to be in the lis
 A vital part of my algorithm is to iterate through the IP addresses that are elements in the remove_list. To do this, I created a for loop. The purpose of the for loop in this algorithm is to apply specific code statements to all elements in a sequence. The for keyword starts the loop. It is followed by the loop variable element and the keyword in. The keyword in initiates the iteration through the sequence ip_addresses and assigns each value to the loop variable element:  <br/>
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHIterateList.jpg" height="38%" width="38%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHIterateList.jpg" height="48%" width="48%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
@@ -61,7 +61,7 @@ This algorithm requires removing any IP address from the allow list, ip_addresse
 I applied .remove() to ip_addresses. I passed in the loop variable element as the argument so that each IP address that was in the remove_list would be removed from ip_addresses: <br /> 
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHRemoveIP.jpg" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHRemoveIP.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
@@ -69,7 +69,7 @@ I applied .remove() to ip_addresses. I passed in the loop variable element as th
 Lastly, in this algorithm, I needed to update the allow list file with the revised list of IP addresses. To do this, I needed to convert the list back into a string. I used the .join() method for this. The .join() method combines all items into a string. I used the .join() method to create a string from the list ip_addresses so that I could be changed to an argument in the .write() method when writing to the file "allow_list.txt": <br />
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/Updatefile.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/Updatefile.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
@@ -81,7 +81,7 @@ For this, I used a second argument of "w" with the open() function in my with st
 In this scenario I wanted to write the updated allow list as a string to the file "allow_list.txt". The restricted content will no longer be accessible to any IP addresses that were removed from the allow list. To rewrite the file, I appended the .write() function to the file object file that I identified in the with statement. I passed in the ip_addresses variable as the argument to specify that the contents of the file specified in the with statement should be replaced with the data in this variable. <br />
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/write.1.jpg" height="52%" width="52%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/write.1.jpg" height="62%" width="62%" alt="Disk Sanitization Steps"/>
 </p> 
 <br />
 <br />

@@ -1,4 +1,4 @@
-<h1>UpdateFileWithPython</h1>
+<h1>Update File With Python</h1>
 
 <h2>Description</h2>
 Access to restricted content is updated with an allow list of IP addresses. The "allow_list.txt" file describes these IP addresses. A separate remove list identifies IP addresses that should no longer have access to this data. I created an algorithm to assist in updating the "allow_list.txt" file and remove these IP addresses that should no longer have access.

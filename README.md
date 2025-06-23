@@ -61,7 +61,7 @@ This algorithm requires removing any IP address from the allow list, ip_addresse
 I applied .remove() to ip_addresses. I passed in the loop variable element as the argument so that each IP address that was in the remove_list would be removed from ip_addresses: <br /> 
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHRemoveIP.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHRemoveIP.jpg" height="73%" width="73%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
@@ -69,7 +69,7 @@ I applied .remove() to ip_addresses. I passed in the loop variable element as th
 Lastly, in this algorithm, I needed to update the allow list file with the revised list of IP addresses. To do this, I needed to convert the list back into a string. I used the .join() method for this. The .join() method combines all items into a string. I used the .join() method to create a string from the list ip_addresses so that I could be changed to an argument in the .write() method when writing to the file "allow_list.txt": <br />
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/Updatefile.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/Updatefile.jpg" height="83%" width="83%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
@@ -81,7 +81,7 @@ For this, I used a second argument of "w" with the open() function in my with st
 In this scenario I wanted to write the updated allow list as a string to the file "allow_list.txt". The restricted content will no longer be accessible to any IP addresses that were removed from the allow list. To rewrite the file, I appended the .write() function to the file object file that I identified in the with statement. I passed in the ip_addresses variable as the argument to specify that the contents of the file specified in the with statement should be replaced with the data in this variable. <br />
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/write.1.jpg" height="62%" width="62%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/write.1.jpg" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 </p> 
 <br />
 <br />

@@ -25,7 +25,7 @@ Access to restricted content is updated with an allow list of IP addresses. The 
 Second, I used a with statement to open the file. In my algorithm, the with statement is used with the .open() function to read its content. The purpose of opening the file is to give me  access to the IP addresses stored in the allow list file. The with keyword will assist by managing the data by closing the file after exiting the with statement. In the code with open(import_file, "r") as file: <br />
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/Buildwith.jpg" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/Buildwith.jpg" height="68%" width="68%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
@@ -35,7 +35,7 @@ In order to read the file contents, I used the .read() method to convert it into
  This code allows me to access the "allow_list.txt" file into a string format which enables me to later use the string to organize and extract data from the Python program: <br />
 <br />
 <p align="center">
-<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHFileContents.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DanielYoon82/UpdateFileWithPython/blob/main/images/GHFileContents.jpg" height="85%" width="85%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
